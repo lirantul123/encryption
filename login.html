@@ -61,17 +61,6 @@
             event.preventDefault();
         });
 
-        var selectedAnimal = '';
-
-        function selectAnimal(animal) {
-            selectedAnimal = animal;
-            var animalImages = document.querySelectorAll('.animal-images img');
-            animalImages.forEach(function (image) {
-                image.style.border = 'none';
-            });
-            document.querySelector('img[alt="' + animal + '"]').style.border = '2px solid blue';
-        }
-
         function validateLogin() {
             var username = document.getElementById("username").value;
             var password = document.getElementById("password").value;
